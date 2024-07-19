@@ -1,0 +1,102 @@
+{
+  "1": {
+    "ques": "Which Angular mechanism is primarily used for communication between components?",
+    "options": [
+      "@Input() and @Output()",
+      "Services",
+      "Events",
+      "All of the above"
+    ],
+    "ans": ["All of the above"]
+  },
+  "2": {
+    "ques": "How do you pass data from a parent component to a child component?",
+    "options": [
+      "Using @Input() decorator",
+      "Using @Output() decorator",
+      "Using EventEmitter",
+      "Using a service"
+    ],
+    "ans": ["Using @Input() decorator"]
+  },
+  "3": {
+    "ques": "What is the purpose of the @Output() decorator in Angular?",
+    "options": [
+      "To receive data from a child component",
+      "To emit events from a component",
+      "To define a component's input properties",
+      "To inject a service into a component"
+    ],
+    "ans": ["To emit events from a component"]
+  },
+  "4": {
+    "ques": "How do you handle events emitted from a child component in the parent component?",
+    "options": [
+      "Using @Input() decorator",
+      "Using @Output() decorator",
+      "Using EventEmitter",
+      "Using a service"
+    ],
+    "ans": ["Using EventEmitter"]
+  },
+  "5": {
+    "ques": "What is the advantage of using services for component communication?",
+    "options": [
+      "Allows for data sharing across multiple components",
+      "Reduces code duplication",
+      "Enhances code reusability",
+      "All of the above"
+    ],
+    "ans": ["All of the above"]
+  },
+  "6": {
+    "ques": "How do you inject a service into a component?",
+    "options": [
+      "Using the @Injectable() decorator",
+      "Using the @Component() decorator",
+      "Using the @Input() decorator",
+      "Using the @Output() decorator"
+    ],
+    "ans": ["Using the @Injectable() decorator"]
+  },
+  "7": {
+    "ques": "Which approach is generally recommended for complex communication scenarios involving multiple components?",
+    "options": [
+      "Using @Input() and @Output()",
+      "Using services",
+      "Using EventEmitter",
+      "Using RxJS subjects"
+    ],
+    "ans": ["Using services"]
+  },
+  "8": {
+    "ques": "What is the role of the Subject class in RxJS for communication?",
+    "options": [
+      "To emit events",
+      "To subscribe to events",
+      "To create a shared data stream",
+      "All of the above"
+    ],
+    "ans": ["All of the above"]
+  },
+  "9": {
+    "ques": "What is the benefit of using RxJS for component communication?",
+    "options": [
+      "Provides a reactive and observable approach",
+      "Enhances code testability",
+      "Facilitates asynchronous operations",
+      "All of the above"
+    ],
+    "ans": ["All of the above"]
+  },
+  "10": {
+    "ques": "What is the best practice for managing complex component communication in a large Angular application?",
+    "options": [
+      "Using a centralized communication service",
+      "Implementing a state management solution",
+      "Using RxJS subjects",
+      "All of the above"
+    ],
+    "ans": ["All of the above"]
+  }
+}
