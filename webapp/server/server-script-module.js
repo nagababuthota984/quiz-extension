@@ -23,10 +23,11 @@ async function generateMCQs() {
     history: [],
   });
 
+  let heading = 'How to make communication between two components in angular';
+  let prompt = 'Generate 10 mcqs from the topic "'+heading+'"in form of json as given\n{\n    "1":{\n        "ques":"..",\n        "options":["op1","op2","opt3","op4"],\n        "ans":["opt1"]\n\n    },\n    "2":{\n        ...\n    }\n}'
+
   try {
-    const result = await chatSession.sendMessage(
-      'Generate 10 mcqs about from the topic \'How to make communication between two components in angular\' in form of json as given\n{\n    "1":{\n        "ques":"..",\n        "options":["op1","op2","opt3","op4"],\n        "ans":["opt1"]\n\n    },\n    "2":{\n        ...\n    }\n}'
-    );
+    const result = await chatSession.sendMessage(prompt);
 
     const output = result.response.text();
     console.log(output);
