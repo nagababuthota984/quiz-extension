@@ -4,6 +4,6 @@
   "version": "1.0",
   "permissions": ["activeTab", "scripting"],
   "action": {
-    "default_popup": "./webapp/public/index.html"
+    "default_popup": "./public/index.html"
   }
 }
