@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const quizContainer = document.getElementById("quiz-container");
   const submitBtn = document.getElementById("submit-btn");
   const resultContainer = document.getElementById("result-container");
-  let baseURL = "https://readquest-nb-hnhwhfd8abfphvd3.eastus-01.azurewebsites.net/prompt";
+  let baseURL = "https://readquest-nb-lnx-ewdjhehedkdnd3fr.eastus-01.azurewebsites.net/prompt";
 
   //Get Heading
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
