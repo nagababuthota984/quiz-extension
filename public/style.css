@@ -1,11 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #d5d5d5;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     width: 450px;
+    border-radius: 25px;
+    border: none;
 }
 
 .container {

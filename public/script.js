@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
           buildFetchRequest(results[0].result);
           document.getElementById("title").innerText = results[0].result;
         } else {
-          document.getElementById("title").innerText = "No MCQ Found";
+          document.getElementById("title").innerText = "Couldn't generate questions on the current topic.";
         }
       }
     );
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const quizData = JSON.parse(data);
       renderQuiz(quizData);
     } catch (error) {
-      console.error("Error fetching quiz data:", error);
+      document.getElementById("title").innerText = "Couldn't generate questions on the current topic.";
     }
   }
 
@@ -91,5 +91,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function getH1Element() {
   const h1 = document.querySelector("h1");
-  return h1 ? h1.innerText : "No H1 element found";
+  return h1 ? h1.innerText : "Couldn't figure out the Topic";
 }
